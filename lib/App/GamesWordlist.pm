@@ -297,6 +297,8 @@ See the included script L<games-wordlist>.
 
 =head1 SEE ALSO
 
+L<App::wordlist> which greps C<WordList::*> modules instead.
+
 L<Games::Word::Wordlist>
 
 L<Games::Word::Phraselist>
