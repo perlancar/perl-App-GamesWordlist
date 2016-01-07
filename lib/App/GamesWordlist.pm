@@ -1,4 +1,4 @@
-package App::wordlist;
+package App::GamesWordlist;
 
 # DATE
 # VERSION
@@ -287,7 +287,7 @@ sub wordlist {
 
 =head1 SYNOPSIS
 
-See the included script L<wordlist>.
+See the included script L<games-wordlist>.
 
 
 =head1 SEE ALSO
