@@ -118,26 +118,31 @@ $SPEC{wordlist} = {
             argv => [],
             summary => 'By default print all words from all wordlists',
             test => 0,
+            'x.doc.show_result' => 0, # too large & no need
         },
         {
             argv => [qw/foo bar/],
             summary => 'Print all words matching /foo/ and /bar/',
             test => 0,
+            'x.doc.show_result' => 0, # no need
         },
         {
             argv => [qw/--or foo bar/],
             summary => 'Print all words matching /foo/ or /bar/',
             test => 0,
+            'x.doc.show_result' => 0, # no need
         },
         {
             argv => [qw/-w KBBI foo/],
             summary => 'Select a specific wordlist (multiple -w allowed)',
             test => 0,
+            'x.doc.show_result' => 0, # no need
         },
         {
             argv => [qw|/fof[aeiou]/|],
             summary => 'Filter by regex',
             test => 0,
+            'x.doc.show_result' => 0, # no need
         },
     ],
     'cmdline.default_format' => 'text-simple',
