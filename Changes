@@ -1,5 +1,12 @@
 Revision history for App-GamesWordlist
 
+0.14    2016-01-07 (PERLANCAR)
+
+	- No functional changes.
+
+	- No need to show examples' result (which are large).
+
+
 0.13    2016-01-07 (PERLANCAR)
 
         - Rename module/script from App::wordlist/wordlist to
