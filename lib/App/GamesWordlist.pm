@@ -249,7 +249,8 @@ sub wordlist {
                     argv => [qw/mods --namespace Games::Word::Wordlist
                                 --namespace Games::Word::Phraselist/],
                 );
-                return [200, "OK", [grep {/(Word|Phrase)list::/} sort @$res]];
+                return $res unless $res->[0] == 200;
+                return [200, "OK", [grep {/(Word|Phrase)list::/} sort @{$res->[2]}]];
             } elsif ($method eq 'metacpan') {
                 unless (eval { require MetaCPAN::Client; 1 }) {
                     warn "MetaCPAN::Client is not installed, skipped listing ".
